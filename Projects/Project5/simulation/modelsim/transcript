@@ -1,0 +1,34 @@
+vsim -gui -L cycloneiv_ver -L altera_ver work.moore10010TB -sdftyp /CUT2=C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/simulation/modelsim/moore10010_v.sdo
+# vsim -gui -L cycloneiv_ver -L altera_ver work.moore10010TB -sdftyp "/CUT2=C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/simulation/modelsim/moore10010_v.sdo" 
+# Start time: 07:48:49 on Jun 16,2021
+# Loading work.moore10010TB
+# Loading work.moore10010_pre
+# Loading work.moore10010
+# Loading work.hard_block
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
+# Loading instances from C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/simulation/modelsim/moore10010_v.sdo
+# Loading instances from moore10010_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/simulation/modelsim/moore10010_v.sdo
+# Loading timing data from moore10010_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /moore10010TB File: C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/simulation/modelsim/TB.v
+add wave -position end  sim:/moore10010TB/cclk
+add wave -position end  sim:/moore10010TB/jj
+add wave -position end  sim:/moore10010TB/rrst
+add wave -position end  sim:/moore10010TB/pre
+add wave -position end  sim:/moore10010TB/post
+run -all
+# ** Note: $stop    : C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/simulation/modelsim/TB.v(20)
+#    Time: 891 ns  Iteration: 0  Instance: /moore10010TB
+# Break in Module moore10010TB at C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/simulation/modelsim/TB.v line 20
+quit -sim
+# End time: 07:50:05 on Jun 16,2021, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 1
+project open C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/mealy/simulation/modelsim/MealySynth

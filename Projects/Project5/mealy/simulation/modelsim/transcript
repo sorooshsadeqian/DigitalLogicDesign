@@ -1,0 +1,61 @@
+vsim -gui -L cycloneiv_ver -L altera_ver -sdftyp /CUT2=C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/simulation/modelsim/moore10010_v.sdo work.mealy10010TB
+# vsim -gui -L cycloneiv_ver -L altera_ver -sdftyp "/CUT2=C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/simulation/modelsim/moore10010_v.sdo" work.mealy10010TB 
+# Start time: 07:51:44 on Jun 16,2021
+# Loading work.mealy10010TB
+# Loading work.mealy10010_pre
+# Loading work.mealy10010
+# Loading work.hard_block
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
+# Loading instances from C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/simulation/modelsim/moore10010_v.sdo
+# ** Error (suppressible): (vsim-SDF-3250) moore10010_v.sdo(128): Failed to find INSTANCE '\ns.C~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) moore10010_v.sdo(214): Failed to find INSTANCE '\ns.F~0 '.
+# ** Error (suppressible): (vsim-SDF-3250) moore10010_v.sdo(226): Failed to find INSTANCE '\ps.F '.
+# Loading instances from mealy10010_v.sdo
+# ** Error (suppressible): (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Error: (vsim-SDF-3445) Failed to parse SDF file "C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/simulation/modelsim/moore10010_v.sdo".
+#    Time: 0 ps  Iteration: 0  Instance: /mealy10010TB File: C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/mealy/simulation/modelsim/mealyTB.v
+# Loading timing data from mealy10010_v.sdo
+# Error loading design
+# End time: 07:51:45 on Jun 16,2021, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 1
+vsim -gui -L cycloneiv_ver -L altera_ver -sdftyp /CUT2=C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/mealy/simulation/modelsim/mealy10010_v.sdo work.mealy10010TB
+# vsim -gui -L cycloneiv_ver -L altera_ver -sdftyp "/CUT2=C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/mealy/simulation/modelsim/mealy10010_v.sdo" work.mealy10010TB 
+# Start time: 07:52:17 on Jun 16,2021
+# Loading work.mealy10010TB
+# Loading work.mealy10010_pre
+# Loading work.mealy10010
+# Loading work.hard_block
+# Loading cycloneiv_ver.cycloneiv_io_obuf
+# Loading cycloneiv_ver.cycloneiv_io_ibuf
+# Loading cycloneiv_ver.cycloneiv_clkctrl
+# Loading cycloneiv_ver.cycloneiv_mux41
+# Loading cycloneiv_ver.cycloneiv_ena_reg
+# Loading cycloneiv_ver.cycloneiv_lcell_comb
+# Loading altera_ver.dffeas
+# Loading instances from C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/mealy/simulation/modelsim/mealy10010_v.sdo
+# Loading instances from mealy10010_v.sdo
+# Loading altera_ver.PRIM_GDFF_LOW
+# Loading timing data from C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/mealy/simulation/modelsim/mealy10010_v.sdo
+# Loading timing data from mealy10010_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /mealy10010TB File: C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/mealy/simulation/modelsim/mealyTB.v
+add wave -position end  sim:/mealy10010TB/cclk
+add wave -position end  sim:/mealy10010TB/jj
+add wave -position end  sim:/mealy10010TB/rrst
+add wave -position end  sim:/mealy10010TB/pre
+add wave -position end  sim:/mealy10010TB/post
+run -all
+# ** Note: $stop    : C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/mealy/simulation/modelsim/mealyTB.v(20)
+#    Time: 891 ns  Iteration: 0  Instance: /mealy10010TB
+# Break in Module mealy10010TB at C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/mealy/simulation/modelsim/mealyTB.v line 20
+quit -sim
+# End time: 07:53:23 on Jun 16,2021, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 1
+cd C:/Users/saeed/Desktop/LogicCircuitDesign/Projects/Project5-2/compare
